@@ -1,7 +1,7 @@
 __author__ = 'vishlesh'
 
 import sys
-sys.path.append('/home/vishlesh/SDN_PolicyGenerator')
+sys.path.append('/home/vishlesh/PolicyBench')
 from PolicyGenerator.Measurement.MeasurementPolicies import *
 from PolicyGenerator.Policy import *
 from PolicyGenerator.Reachability.TraverseSourceInfoGraph import *
