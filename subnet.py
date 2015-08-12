@@ -1,12 +1,9 @@
 __author__ = 'Vishlesh.Patel'
 
-
 import ipaddress
 
 import math
 import random
-
-
 
 class Subnet:
     ''''
