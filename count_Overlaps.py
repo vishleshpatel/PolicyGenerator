@@ -2,10 +2,10 @@ __author__ = 'vishlesh'
 
 import sys
 sys.path.append('/home/vishlesh/SDN_PolicyGenerator')
-from SDN_PolicyGenerator.Measurement.MeasurementPolicies import *
-from SDN_PolicyGenerator.Policy import *
-from SDN_PolicyGenerator.Reachability.TraverseSourceInfoGraph import *
-from SDN_PolicyGenerator.Reachability.TraverseDestInfoGraph import *
+from PolicyGenerator.Measurement.MeasurementPolicies import *
+from PolicyGenerator.Policy import *
+from PolicyGenerator.Reachability.TraverseSourceInfoGraph import *
+from PolicyGenerator.Reachability.TraverseDestInfoGraph import *
 import ipaddress
 
 
@@ -15,10 +15,10 @@ class Overlap():
 
     def getOverlappedPolicies(self,listReachablityPolicies,listMeasurementPolicies):
 
-        file_measurementPolicies = open('overlappedMeasurementPolicies.txt','w').close()
-        file_measurementPolicies = open('overlappedMeasurementPolicies.txt','w')
-        file_reachablityPolicies = open('overlappedReachabilityPolicies.txt','w').close()
-        file_reachablityPolicies = open('overlappedReachabilityPolicies.txt','w')
+        file_measurementPolicies = open('../Sample Outputs/overlappedMeasurementPolicies.txt','w').close()
+        file_measurementPolicies = open('../Sample Outputs/overlappedMeasurementPolicies.txt','w')
+        file_reachablityPolicies = open('../Sample Outputs/overlappedReachabilityPolicies.txt','w').close()
+        file_reachablityPolicies = open('../Sample Outputs/overlappedReachabilityPolicies.txt','w')
 
         assert isinstance(listMeasurementPolicies,list)
         assert isinstance(listReachablityPolicies,list)
