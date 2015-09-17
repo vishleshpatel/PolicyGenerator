@@ -48,10 +48,11 @@ def main():
     destinationInfoObj = DestInfo()
     sourceInfoObj = SourceInfo()
     list_PolicyUnits = destinationInfoObj.traverseDestInfoGraph(destinationGraph,
-                                                                totalPolicyUnits,subnetList)
+                                                                totalPolicyUnits,
+                                                                subnetList)
     print("total policy units: ",len(list_PolicyUnits))
     fwd_policies = []
-    fwdPolicies=sourceInfoObj.traverseSourceInfoGraph(sourceGraph,list_PolicyUnits,subnetList)
+    fwdPolicies=sourceInfoObj.traverseSourceInfoGraph(sourceGraph,list_PolicyUnits, subnetList)
     print(len(fwdPolicies),"total no. of end point reachability policies")
     print("set of destinations: ",destinationInfoObj.set_selectedDestIPs)
 
@@ -59,7 +60,8 @@ def main():
     m = MeasurementPolicies()
     listMeasurePolicies = []
     noMeasurePolicies = int(args.measurePolicies)
-    measurePolicies = m.generateMeasurementPolicies(subnetList,destinationInfoObj.set_selectedDestIPs,noMeasurePolicies)
+    measurePolicies = m.generateMeasurementPolicies(subnetList,
+                                                    destinationInfoObj.set_selectedDestIPs,noMeasurePolicies)
     for each_policy in measurePolicies:
         assert isinstance(each_policy,Policy)
         print(each_policy.getSource(),"source",each_policy.getDest(),"destination",each_policy.getAction(),"action")

@@ -2,8 +2,8 @@ __author__ = 'vishlesh'
 
 import random
 import math
-from SDN_PolicyGenerator.Policy import *
-from SDN_PolicyGenerator.Action import *
+from PolicyGenerator.Policy import *
+from PolicyGenerator.Action import *
 
 class DestInfo:
     def __init__(self):
