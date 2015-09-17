@@ -232,21 +232,3 @@ class AVLTree():
         else:  # key is equal to node key
             return node
 
-"""
-rootnode = Node(1,ipaddress.ip_network('10.0.0.0/24'),ipaddress.ip_network('10.0.0.0/24'))
-tree = AVLTree(rootnode)
-node1 = Node(2,None,None)
-tree.insert_node(node1)
-node2 = Node(3,None,None)
-tree.insert_node(node2)
-node3 = Node(4,None,None)
-tree.insert_node(node3)
-print(tree.height())
-print(tree.find(2).dstIP)
-print(tree.rootNode.key,"feffs")
-
-list2=tree.inorder_non_recursive()
-for each_node in list2:
-    print(each_node.key)
-print(len(list2))
-"""
