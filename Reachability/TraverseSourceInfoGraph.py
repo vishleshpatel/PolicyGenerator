@@ -51,7 +51,7 @@ class SourceInfo:
 
     def traverseSourceInfoGraph(self,sourceInfoGraph,list_PolicyUnits,subnetsList):
         """
-        :param sourceInfoGraph: list of points in source Info graph = graph 2
+        :param sourceInfoGraph: list of points in source Info graph ( Graph 2 )
         :param list_PolicyUnits: list of Policy Units generated from method traverseDestInfoGraph
         :param subnetsList: list of subnet address available in enterprise
         :return: Method sets source addresses in the policy unit
