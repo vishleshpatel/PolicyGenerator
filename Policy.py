@@ -1,7 +1,7 @@
 __author__ = 'vishlesh'
 
 
-from SDN_PolicyGenerator.Action import *
+from PolicyGenerator.Action import *
 
 class Policy:
     def __init__(self):
