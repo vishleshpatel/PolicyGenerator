@@ -77,7 +77,7 @@ class DestInfo:
                 list_destAddresses = list_subnetAddr
             p = Policy()
             p.setDest(list_destAddresses)
-            a = Action(1)   # action type: forward
+            a = Action.forward   # action type: forward
             p.setAction(a)
             policyUnits.append(p)
 
