@@ -1,7 +1,7 @@
 __author__ = 'vishlesh'
 
-from SDN_PolicyGenerator.Reachability.TraverseDestInfoGraph import *
-from SDN_PolicyGenerator.Policy import *
+from PolicyGenerator.Reachability.TraverseDestInfoGraph import *
+from PolicyGenerator.Policy import *
 
 
 class SourceInfo:
