@@ -2,8 +2,8 @@ __author__ = 'vishlesh'
 
 import random
 import ipaddress
-from SDN_PolicyGenerator.Policy import *
-from SDN_PolicyGenerator.Measurement.createTree import *
+from PolicyGenerator.Policy import *
+from PolicyGenerator.Measurement.createTree import *
 
 class MeasurementPolicies():
     def __init__(self):
