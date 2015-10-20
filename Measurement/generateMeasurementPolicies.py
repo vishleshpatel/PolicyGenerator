@@ -2,10 +2,10 @@ __author__ = 'vishlesh'
 #!/usr/bin/env python3
 import sys
 sys.path.append('/home/vishlesh/SDN_RuleSetGenerator/')
-from SDN_PolicyGenerator.Measurement.MeasurementPolicies import *
-from SDN_PolicyGenerator.Reachability import *
-from SDN_PolicyGenerator.subnet import *
-from SDN_PolicyGenerator.Policy import *
+from PolicyGenerator.Measurement.MeasurementPolicies import *
+from PolicyGenerator.Reachability import *
+from PolicyGenerator.subnet import *
+from PolicyGenerator.Policy import *
 import argparse
 
 def main():
